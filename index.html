@@ -10,14 +10,25 @@
 
 <div id="modalContainer" class="hidden">
   <div id="modalContent">
-    <p>모달 창 입니다.</p>
-    <button id="modalCloseButton">닫기</button>
+    <h3>해당 기능은 앱에서 사용 가능해요!</h3>
+    앱 설치하고 더 편하게 쇼핑해보세요<br>
+        <img src="QR.png"> <br>
+    휴대폰으로 QR 코드를 스캔해서 설치해보세요
+        <button id="modalCloseButton">확인</button>
+
+    
   </div>
 </div>
-    <div>
-        <img src="다운로드.png" id="logo">앱에서 더 많은 상품을 볼 수 있어요! <button onclick="modal" id="modalOpenButton">앱에서 보기</button>
+    <div id="top">
+        <img src="다운로드.png" id="logo">
+        <span id="more">앱에서 더 많은 상품을 볼 수 있어요!</span> &nbsp; 
+        <button onclick="modal" id="modalOpenButton">앱에서 보기</button>
     </div>
-    
-    <script src="app.js"></script>
+    <div id="searchcontainer">
+    <label for="search"><img src="search.png" alt="search" id="searchimg"></label><input type="text" name="things" id="search" placeholder="하나만 사도 무료배송">
+    <button id="cart"><img id="cartimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAZlBMVEX///8VFRcAAADr6+sGBgpOTk4KCg2srKzOzs4/Pz/7+/sAAATFxcXU1NTAwMApKSofHyFcXFxvb2/19fXi4uIzMzMQEBOampp+fn5qamqOjo6Hh4d0dHQ4ODi4uLhkZGSioqJGRkjzwkedAAAIoUlEQVR4nO2d65aqOBBGJcQgQW4NBm8ovv9LjrZUoaaibTchyzPZP2atmcg5VZBL1ZdKZjbzeDwej8fj8Xg8Ho/H4/F4PB6Px+PxeDz/I+QsbL409ruodm3ZbwhjxXR4Hu9T16a9z4mpgEDxJGjk+cN9Epkgffn2h5WVa/Peo2EmXy7erD7ryzTC7EwQsKNr+94iNXezb28i1wa+xZo9+zbJ6aOGTbgriKkZPpcKPunTyFm1iDTWLIF+tnFt4bvIe2ayygp+dYbPQ9fW/Z2on7LFaunalD9y/jhpzq9jRmxdW/N3wq/+07C9a1P+joTQgJUfGT/fc+inZxF/+qA5s1hd5zOlPmmlMVBvoJ/tXJvyd+QWnNn8A4Mm4tdBw9usCm1jOwJcthCBxnP77Oy6U5eQtwlunYQHlc0cXa6fJKHjw0p7rpxp1NO8bXRvrM4zWfs0pR4bbnVxrsvktQnjIazqdHIz5aBRgV0laMcndIbNrfoyO+QwA3BCJriA/VAYfsBe/QD/BNbYdaaO+0/D1kuSDDoiL1PyB4t1cH0fyfxA/6ADd5ltabvEBI1enyHpUUaxEDRGtjdICaiosnFMNrPuOwHPaVNkrxQoburwGK2awpUT/GA1jslmDn0nUaY+cIBuFhumoh3YujU4Awodsy41hAX8VYYEbQEaTmzohxASsYbyVs5S7GWL8cw20MIMsKejQLBFtHQ/HGSRjv4LYMgoZl+egxfLC/rN130vUSu6Hw7pquHT4hRzsr95csBeQEeBdXCdrVRO9xJII5Q4kO3VCma7rX1nKnSGfrM1qB55Rran8+t8qApDOw7KKSQgBW+OXkjCef/mC9rZRb/smkTepvdFiCl0hg0OULI5hG4U0MFI1ncjHtPd8KtfyNgk8vwwaMgZINzDdEbrUYe+G7E5OUFUc5gtTcvQiMjzdAXOkCO4wumOVqSjftVlR7IbLSD9Ow+ZKbaCcdCQ1laoSNN7Ul0/dbMN2Y26/sMJu4kZAqueyKlWCUGvYYJAX+k4cw++TiTOw6BRAWkONBvqH9CZHdWLquOryG1kUljj6WVviQkNZc4g8ZJhZHqC8T+RNl/lkAZ8pQS4WxhnROsSQ7M19XDTZ7IimGjXpILJN8gpVTVGNepENUPerVZUawsz5WT7WfDuA5UQDMoap5pRRXz6MFtPM2RuMg57mPKD8alXlqVAJQo6pLYARizWMMQ6NpCRdWcmGjIXlnTd44jOWJb/bklbVGmFzuDobxtVPtmQuRElzkuNDqSKQUE1Bj94kk83ZG5qNcSpyzQwBygP5sakXGptBwzMNlPW52GtRktEHYdnJmFMvdbbwvJJoz0gkVei0xsPT6L4avfEXoxgC+JPtccgfhF6UKbAGb3n4xJFFXkcMESdtLJd4gsmajWWRS9ZnHTJIuzfglL65FttUXOftqQ16nNnvtINXvQTt2h1ZQwlQEKIClH+/7Jis5FlH+grQtVIe+WME6tFHTPjSoLCbtBZsPgJ4ZP0Ft6+0N7+pTRSGKfBDLWFqQ+DrM2DpsZx0WmPLbD+TjMYx6Fopz5uALUaxGsMhx0Y7THcvTlp70DikJn8tAHUaihd3x7WEl2zQLVDF19D3DHr7Jhspp6DJtw9doobAUbrL7hJ+CjdSPTTcsUMyRBHae8YpTEtK8FMiJWan/A9DYK8Vba99sBz7UVi/KWJls/kzhzlf1smm8lAM9L3USNl0sZhkQ+4ti5K7GUTJmZACPqYPmhw10ILzlBy41qc6XLIzGZQrcW+Hp3J+pUx0XKsCneqtNfvcsgMf7vIlw8aa9dvjolV9CjOzuH9bx9ahtnx5MIZPAEpikd6g8/hpKkl0FpQy3QwZM6DJoBc3yxaqMem1y0T1GVQxDbUMzFBXQaFlbpgV0d0MyvOkOVB9pFWnHEzZIbCsDF9MdRC2WcYNNrc9Ds4U3RBzQRgrYZYxaNwKjNnZ9qHWo1duhiD1OGpaZljXbA7I0YDJfLYtSV/Rg61GsU/cAatxsl5ws0hW4Sw7ZysP+zSEwIUlZLT55+qH7ad+T9wDBW2hy4VmaH8Pa79+Ab183MeEjf6XRU/5bBIQ9ceSdzyu4wb0+GfHyGO3cLxrSkyCkaKnAVjq63Te62qbTtiFsDZPHL3carj09t23oflndUTwM8wXB32B3igyaOTIGc2CrXEJMcZdOzUaSXCxbAJ26EcUPCE344eQZVf3nHzY3X/tJPcqBsETRaX5XzFcQCJ878/51gMy5P6fnoYfvR5CatUeM9BstqlclZle8g7f6J9YZUnb7ffT3+hNw7E5gVsz4hVn8tUDW4/vSxKxvpbnvcDHrehAtZaNZwiwtNUOJlWew6j4NVSPpz4xaxOznGDZvJ+hjvK8xqXuSWefXslS0IlIc/hYYklAmp6UZM6B1vhhtGrLBq+wu3UVeG5nMmFQPIcLO4MRi9mgJY4eFq1Ex/QGNhBud92iKYknhd79WWwsuSmhkPC5tnLp0cHu9ll5uq9uT0v9hzYp02KYcxMeab5AVwzb94jHK83nkhHGsJwvJ5j+r0zvOkogcoxGeFkNn+1ziyGdab/qRxU+MKq4RRDBMDaQ13Jqm5y/C8vz4tJ3JBlcXZ+OkyHC2/tXwOg02BslrBy2+zmmKj95IjVdrBdHc9P36RGLio06uE8QHB3aYn5cozbpwOMk9XdjSaX450O8rPOkM9womhWQxqfDtxo8CVpj/rBOX55q7jd4+rOYckIexQ7/ixOTFeUN8YrT6xTBZqi8X1v+E/6/Dmw1Cs8xKV20JWyWW0Ev3cleCPprY+MqztXikug50ymlV0csL7wRyWsiN8Kq6rtiff+KMVZcXR912jYHOPrVdXFadO92+Hrbdl+T+xJcdo7lDORahltd7tdEy1+00HCZXd9+gP//wkfgLz5p8fj8Xg8Ho/H4/F4PB6Px+PxeDwej+ef5z+AjZTytx9J0QAAAABJRU5ErkJggg=="></button>
+    </div>
+    <script src="slide.js"></script>
+    <script src="modal.js"></script>
 </body>
 </html>
